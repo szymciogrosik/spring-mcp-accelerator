@@ -29,7 +29,7 @@ To connect the MCP servers to your AI Assistant, you must configure SSE (Server-
   "mcp": {
     "spring-mcp-server": {
       "type": "remote",
-      "url": "http://localhost:8390/sse",
+      "url": "http://localhost:8395/sse",
       "enabled": true
     }
   }
