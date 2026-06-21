@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-mcp-server
+  main:
+    web-application-type: reactive
+
+server:
+  port: 8080

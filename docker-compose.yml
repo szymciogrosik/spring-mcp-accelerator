@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  spring-mcp-server:
+    build: ./spring-mcp-server
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    ports:
+      - "8395:8080"
+    restart: unless-stopped
+    volumes:
+    # Cache maven dependencies so they aren't downloaded every time
+    - spring-mcp-server_maven-cache:/root/.m2
+
+volumes:
+    spring-mcp-server_maven-cache:
